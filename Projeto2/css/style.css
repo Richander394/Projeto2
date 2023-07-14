@@ -1,0 +1,897 @@
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    padding-top: 80px;
+
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: var(--whight, #FFF);
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.10);
+    z-index: 1;
+
+}
+
+header .container {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+
+    display: inline-block;
+    color: #000;
+    font-size: 27px;
+}
+
+header .logo .circle-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #3E50E5;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px;
+    border-radius: 5px;
+}
+
+header nav {
+
+    display: inline-block;
+
+}
+
+header nav ul li {
+    display: inline-block;
+
+}
+
+header nav ul li.menu-icon {
+    display: none;
+}
+
+
+
+
+header nav ul li a {
+    color: #3E3E3E;
+    font-size: 15px;
+    letter-spacing: 0.37px;
+    margin-right: 26px;
+    text-decoration: none;
+
+}
+
+
+
+header nav ul li a:hover {
+    color: #3E50E5;
+}
+
+header nav ul li :last-of-type a {
+
+    margin-right: 0;
+
+}
+
+.container {
+    width: 1440px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 16px;
+
+}
+
+section.hero {
+    position: relative;
+    z-index: 0;
+
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.hero-content .container h1 {
+    max-width: 440px;
+    font-size: 40px;
+    color: #FFF;
+
+    line-height: 56px;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+.hero-content .container p {
+    max-width: 505px;
+    font-size: 15px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-top: 0;
+}
+
+.hero-content .container button {
+    font-size: 12px;
+    color: #FFF;
+    background-color: #3E50E5;
+    max-width: 200px;
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.hero-content .container button:hover {
+    color: #3E50E5;
+    background-color: #FFF;
+    border-radius: 50px;
+    border: none;
+
+}
+
+section.best-sellers {
+    padding-top: 80px;
+}
+
+section.best-sellers h2 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 42px;
+    text-align: center;
+    color: #000;
+    margin: 0 0 14px;
+}
+
+section.best-sellers hr {
+    border-width: 5px;
+    border: none;
+    margin-top: 31px;
+    border-top: 5px solid #67F11D;
+    width: 66px;
+}
+
+section.best-sellers .product-slider {
+    padding: 76px;
+
+}
+
+section.best-sellers .container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+section.best-sellers .product-slider .product {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 33%;
+    text-align: center;
+    margin: 0 8px;
+    padding: 40px;
+    height: 561px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+section.best-sellers .product-slider .product img {
+    max-width: 100%;
+}
+
+
+section.best-sellers .product-slider .product .product-info {
+    margin-top: 10px;
+
+}
+
+section.best-sellers .product-slider .product .product-info .original-price {
+    color: #EC1C1C;
+}
+
+section.best-sellers .product-slider .product .product-info .discount-price {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9B9B9B;
+    text-align: center;
+    text-decoration: line-through;
+
+}
+
+section.best-sellers .product-slider .product-info .categories {
+    margin-top: 53px;
+    color: #3E50E5;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+section.best-sellers .product-slider .product-info .title {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+section.best-sellers .product-slider .product-info .price {
+
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 28px;
+
+
+}
+
+section.best-sellers .product-slider .product-info .button {
+    width: 219.5px;
+    height: 50px;
+    border-radius: 220px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+    border: 1px solid var(--black, #000);
+    text-transform: uppercase;
+    background-color: white;
+    cursor: pointer;
+
+
+}
+
+section.best-sellers .product-slider .product-info .button:hover {
+    border-radius: 220px;
+    background-color: #3E50E5;
+    border: 1px solid var(--black, #3E50E5);
+    color: #FFF;
+}
+
+section.best-sellers .product-slider .product:hover .product-info .button {
+    background-color: #3E50E5;
+    border: 1px solid var(--black, #3E50E5);
+    color: #FFF;
+}
+
+section.best-sellers .product-slider .product.new::before {
+    content: "New";
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 81px;
+    height: 26px;
+    padding: 5px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 16px;
+    background: var(--red, #EC1C1C);
+}
+
+section.newslleter {
+
+    background-color: rgba(200, 200, 200, 0.18);
+    max-width: 955px;
+    text-align: center;
+    padding: 72px 0;
+    margin: 80px auto;
+}
+
+section.newslleter h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    max-width: 712px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+section.newslleter p {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 712px;
+    line-height: 24px;
+    margin: auto;
+    margin-bottom: 21px;
+    padding-left: 20px;
+}
+
+section.newslleter form {
+    display: flex;
+    justify-content: center;
+}
+
+section.newslleter input {
+    padding: 14px 24px;
+    width: 326px;
+    max-width: 80%;
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid var(--black, #3E50E5);
+    color: #3E3E3E;
+
+
+
+}
+
+section.newslleter button {
+    padding: 14px 10px;
+    width: 145px;
+    max-width: 20%;
+    border-radius: 0px 25px 25px 0px;
+    background: var(--blue, #3E50E5);
+    color: #FFF;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+section.newslleter button:hover {
+    background-color: #FFF;
+    border: 1px solid var(--blue, #3E50E5);
+    color: #3E50E5;
+}
+
+
+footer .button-nav {
+    padding: 60px 0;
+    background-color: #3E3E3E;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+footer .copyright-text {
+    color: white;
+    background-color: #2b2b2b;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 22px;
+}
+
+footer .button-nav .container {
+    max-width: 955px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .button-nav ul {
+    list-style: none;
+}
+
+footer .button-nav ul li a {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    max-width: 223px;
+    display: block;
+    color: #E0E0E0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+footer .button-nav ul li a:hover {
+    color: #3E50E5;
+}
+
+footer .button-nav ul .list-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    max-width: 223px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+footer .copyright-text {
+    color: #E0E0E0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+/*Start of design from small desktop*/
+@media screen and (max-width: 1440px) {
+    .container {
+
+        width: 1180px;
+
+
+    }
+
+    header {
+        padding-top: 70px;
+    }
+
+    body {
+        height: 70px;
+    }
+
+    header nav ul li.menu-icon img {
+        vertical-align: middle;
+        width: 20px;
+        height: auto;
+    }
+
+    header nav ul li.menu-icon {
+        display: none;
+    }
+
+    .hero-content .container h1 {
+        max-width: 495px;
+        font-size: 44px;
+        line-height: 50px;
+        margin-bottom: 13px;
+
+    }
+
+    .hero-content .container p {
+        max-width: 518px;
+        font-size: 18px;
+        letter-spacing: 0.45px;
+        line-height: 26px;
+        margin-bottom: 12px;
+
+    }
+
+    .hero-content .container button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+
+
+    }
+
+    section.best-sellers .product-slider .product-info .categories {
+        margin-top: 52px;
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
+
+    section.best-sellers .product-slider .product-info .title {
+
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 5px;
+
+    }
+
+    section.best-sellers .product-slider .product-info .price {
+
+
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 6px;
+
+
+    }
+
+    section.best-sellers .product-slider .product-info .button {
+        width: 220px;
+        height: 50px;
+        border-radius: 220px;
+        font-size: 16px;
+        line-height: 24px;
+
+
+    }
+
+    section.newslleter {
+
+        max-width: 881px;
+
+    }
+
+    section.newslleter h3 {
+        font-size: 22px;
+        line-height: 42px;
+        max-width: 712px;
+        margin-bottom: 10px;
+    }
+
+    section.newslleter p {
+        font-size: 14px;
+        max-width: 712px;
+        line-height: 21px;
+        margin-bottom: 15px;
+
+    }
+
+    section.newslleter input {
+        padding: 14px 24px;
+        width: 326px;
+        max-width: 80%;
+        border-radius: 30px 0px 0px 30px;
+        font-size: 12px;
+        line-height: 18px;
+
+
+    }
+
+    section.newslleter button {
+        padding: 14px 10px;
+        width: 145px;
+        max-width: 20%;
+        border-radius: 0px 25px 25px 0px;
+        font-size: 12px;
+        line-height: 18px;
+
+    }
+
+
+}
+
+/***************************************************************
+**************************CSS MIDIA QUERYS**********************
+***************************************************************/
+
+/*End of design from Desktop*/
+
+/*Start of design from Tasblets*/
+@media screen and (max-width: 960px) {
+    .container {
+        max-width: 92%;
+
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+        display: inline-block;
+    }
+
+
+    header .logo {
+
+
+        font-size: 24px;
+    }
+
+    .hero-content .container h1 {
+        max-width: 377px;
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 12px;
+
+    }
+
+    .hero-content .container p {
+        max-width: 347px;
+        font-size: 16px;
+        letter-spacing: 0.45px;
+        line-height: 24px;
+        margin-bottom: 12px;
+
+    }
+
+    .hero-content .container button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        margin-bottom: 188px;
+
+
+    }
+
+    section.best-sellers h2 {
+
+        font-size: 28px;
+        line-height: 38px;
+        margin: 0 0 12px;
+    }
+
+    section.best-sellers .product-slider .product-info .categories {
+        margin-top: 29px;
+        font-size: 11px;
+        line-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    section.best-sellers .product-slider .product-info .title {
+
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 0.5px;
+
+    }
+
+    section.best-sellers .product-slider .product-info .price {
+
+
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 1.5px;
+
+
+    }
+
+    section.best-sellers .product-slider .product-info .button {
+        width: 146px;
+        height: 36px;
+        border-radius: 25px;
+        font-size: 12px;
+        line-height: 18px;
+
+
+    }
+
+    section.best-sellers .container {
+
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    section.newslleter {
+
+        max-width: 768px;
+
+    }
+
+    section.newslleter h3 {
+        font-size: 22px;
+        line-height: 42px;
+        max-width: 712px;
+        margin-bottom: 10px;
+    }
+
+    section.newslleter p {
+        font-size: 14px;
+        max-width: 712px;
+        line-height: 21px;
+        margin-bottom: 15px;
+
+    }
+
+    section.newslleter input {
+        padding: 14px 24px;
+        width: 209px;
+        max-width: 80%;
+        border-radius: 30px 0px 0px 30px;
+        font-size: 12px;
+        line-height: 18px;
+
+
+    }
+
+    section.newslleter button {
+        padding: 14px 10px;
+        width: 101px;
+        max-width: 20%;
+        border-radius: 0px 25px 25px 0px;
+        font-size: 10px;
+        line-height: 18px;
+
+    }
+}
+
+/*End of design from Tablets*/
+
+/*Start and design from Mobile Phones*/
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 92%;
+
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+        display: inline-block;
+    }
+
+    header .logo {
+
+        font-size: 18px;
+    }
+
+    header .logo .circle-dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .hero-content .container h1 {
+        max-width: 304px;
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 32px;
+        margin: auto;
+        padding-top: 26px;
+        color: #000;
+        text-align: center;
+        margin-bottom: 32px;
+        padding-top: 32px;
+
+    }
+
+    .hero-content .container p {
+        display: none;
+
+    }
+
+    .hero-content .container button {
+        font-size: 14px;
+        letter-spacing: 0.35px;
+        line-height: 21px;
+        margin-bottom: 78px;
+        margin: auto;
+
+
+    }
+
+    .hero-content {
+        position: static;
+
+    }
+
+    section.best-sellers h2 {
+
+        font-size: 24px;
+        line-height: 38px;
+        margin: 0 0 14px;
+    }
+
+    section.best-sellers hr {
+        border-width: 5px;
+        border: none;
+        margin-top: 14px;
+        border-top: 5px solid #67F11D;
+        width: 40px;
+        margin-bottom: 42px;
+    }
+
+    section.best-sellers .product-slider .product-info .categories {
+        margin-top: 35px;
+        font-size: 12px;
+        line-height: 30px;
+        margin-bottom: 7px;
+    }
+
+    section.best-sellers .product-slider .product-info .title {
+
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 7px;
+
+    }
+
+    section.best-sellers .product-slider .product-info .price {
+
+
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 6px;
+
+
+    }
+
+    section.best-sellers .product-slider .product-info .button {
+        width: 193px;
+        border-radius: 25px;
+        font-size: 12px;
+        line-height: 18px;
+        margin: auto;
+
+
+
+    }
+
+    section.best-sellers .container {
+
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    section.newslleter {
+
+        max-width: 375px;
+        margin-bottom: 64px;
+
+    }
+
+    section.newslleter h3 {
+        font-size: 22px;
+        line-height: 42px;
+        max-width: 345px;
+        margin-bottom: 10px;
+    }
+
+    section.newslleter p {
+        font-size: 14px;
+        max-width: 345px;
+        line-height: 21px;
+        margin-bottom: 16px;
+
+    }
+
+    section.newslleter input {
+        padding: 14px 24px;
+        width: 209px;
+        max-width: 80%;
+        border-radius: 30px 0px 0px 30px;
+        font-size: 12px;
+        line-height: 18px;
+
+
+    }
+
+    section.newslleter button {
+        padding: 14px 10px;
+        width: 101px;
+        max-width: 20%;
+        border-radius: 0px 25px 25px 0px;
+        font-size: 10px;
+        line-height: 18px;
+
+    }
+
+    footer .button-nav .container {
+
+
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .button-nav .container .list-title{
+        margin-top: 40px;
+    }
+
+    footer .button-nav .container .list-title li a{
+        margin-top: 40px;
+    }
+}
+
+/*End of design from Mobile Phones*/
